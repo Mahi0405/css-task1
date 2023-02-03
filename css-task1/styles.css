@@ -1,0 +1,118 @@
+#totalbox
+{
+ 
+ height: 500px;
+ margin: 5% 25%;
+ background-color: lightgray;
+}
+div
+{
+margin: 1%;
+}
+.box1
+{
+    float: left;
+    background-color: red;
+    height: 75px;
+    width: 22%;
+}
+.box2
+{
+    float: right;
+    background-color: rgb(9, 0, 128);
+    height: 75px;
+    width: 74%;
+    
+}
+.box3
+{
+    float: left;
+    background-color: rgb(255, 208, 0);
+    height: 150px;
+    width: 98%;
+
+}
+.box4
+{
+    float: left;
+    background-color: rgb(21, 255, 0);
+    height: 75px;
+    width: 31%;
+
+}
+.box5
+{
+    float: left;
+    background-color: rgb(195, 0, 255);
+    height: 75px;
+    width: 31%;
+
+
+}
+.box6
+{
+    float: left;
+    background-color: green;
+    height: 75px;
+    width: 31%;
+    
+
+}
+.box7
+{
+    float: left;
+    background-color: rgb(25, 0, 255);
+    height: 75px;
+    width: 48%;
+
+}
+.box8
+{
+    float: left;
+    background-color: rgb(255, 0, 128);
+    height: 75px;
+    width: 48%;
+
+}
+.box9
+{
+    float: left;
+    background-color: rgb(183, 0, 255);
+    height: 25px;
+    width: 23%;
+    
+}
+.box10
+{
+    float: left;
+    background-color: red;
+    height: 25px;
+    width: 23%;
+    
+}
+.box11
+{
+    float: left;
+    background-color: rgb(0, 255, 0);
+    height: 25px;
+    width: 23%;
+    
+
+}
+.box12
+{
+    float: left;
+    background-color: palevioletred;
+    height: 25px;
+    width: 23%;
+    
+}
+.box13
+{
+    float: left;
+    background-color: rgba(165, 91, 42, 0.822);
+    height: 15px;
+    width: 98%;
+    
+
+}
