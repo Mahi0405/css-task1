@@ -1,0 +1,24 @@
+#numbers
+{
+    background-color: #000000;
+    margin: 0 250px;
+    height: 700px;
+    padding: 20px;
+   
+    
+}
+p
+{
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 3ch;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+}
+.layout
+{
+    background-color: rgb(0, 128, 64);  
+    height: 15px;
+    margin: 0 200px;
+}
