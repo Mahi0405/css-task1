@@ -1,0 +1,54 @@
+@font-face {
+    font-family: hitalica;
+    src: url(./fornts/Hitalica.ttf);
+    
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    font-family: hitalica;
+    font-size: 50px;
+}
+@font-face {
+    font-family: catline;
+    src: url(./fornts/Catline.ttf);
+}
+h2{
+    color: rgb(255, 217, 0);
+    text-align: center;
+    font-family: catline;
+    font-size: 40px;
+}
+@font-face {
+    font-family: hijrnotes;
+    src: url(./fornts/Hijrnotes_PERSONAL_USE_ONLY.ttf);
+}
+h3{
+    color: rgb(0, 255, 55);
+    text-align: center;
+    font-family: hijrnotes;
+    font-size: 40px;
+}
+@font-face {
+    font-family: mygarden;
+    src: url(./fornts/Mygarden.ttf);
+}
+h4{
+    color: rgb(0, 247, 255);
+    text-align: center;
+    font-family: mygarden;
+    font-size: 40px;
+}
+h5{
+    color: rgb(247, 0, 255);
+    text-align: center;
+    font-family: hijrnotes;
+    font-size: 40px;
+}
+h6{
+    color: rgb(255, 0, 85);
+    text-align: center;
+    font-family: catline;
+    font-size: 40px;
+}
