@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <title>js-task-1</title>
+</head>
+<body> 
+    
+    <div id="square">
+        <div class="box" onclick="alertBox(this)">box A</div>
+        <div class="box" onclick="alertBox(this)">box B</div>
+        <div class="box" onclick="alertBox(this)">box C</div>
+         <div class="box" onclick="alertBox(this)">box D</div>
+      </div>
+</body>
+<script>
+    let count=0;
+    function alertBox(cube)
+{
+  if(count == " ")
+    {
+      alert(cube.innerHTML);
+    }
+  else
+    {
+      alert(count + " "+ cube.innerHTML);
+    }
+  count = cube.innerHTML;
+}
+</script>
+</html>

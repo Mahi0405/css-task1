@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js-task3</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <input type="text" id="inputbox">
+        <button type="button" onclick="showAlert()">Summit</button>
+        <div id="printbox"></div>
+    </body>
+    <script>
+        function showAlert()
+        {
+            var x = document.getElementById("inputbox").value;
+            document.getElementById("printbox").textContent = x;
+            alert(x);
+        }
+    </script>
+</html>
+		

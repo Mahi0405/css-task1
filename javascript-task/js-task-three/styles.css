@@ -1,0 +1,11 @@
+#printbox
+{
+    border-style: solid; 
+    background-color:#fff;
+    color: blue;
+    text-align:center;
+    float: middle;
+    border: 2px solid black;
+    width:40%;
+     height:30px;   
+}

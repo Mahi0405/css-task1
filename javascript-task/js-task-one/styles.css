@@ -1,0 +1,16 @@
+#square
+{
+  margin: 20px 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width:250px;
+}
+.box
+{
+  height: 100px;
+  width: 100px;
+  border:2px solid;
+  margin: 10px;
+  text-align: center;
+  background-color: pink;
+}

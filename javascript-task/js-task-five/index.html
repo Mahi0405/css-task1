@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>js-task5</title>
+</head>
+<body>
+    <h1>Family Members</h1>
+    <ol>
+        <li>Krishnan</li>
+        <li>Mahi</li>
+        <li>Mouni</li>
+        <li>Mousi</li>
+        <li>Vijay</li>
+        <li>Akash</li>
+        <li>sujin</li>
+       <li>Vinitha</li>
+    </ol>
+</body>
+<script>
+    let familyMember = document.getElementsByTagName("li");
+for(let i = 0; i < familyMember.length; i++){
+  familyMember[i].addEventListener("click",
+     function(){
+    if (i % 2 == 0)
+        {
+          this.style.color = 'red'; 
+        }
+        else{
+          this.style.color = 'green';  
+        }
+      });
+    }
+    
+</script>
+</html>
