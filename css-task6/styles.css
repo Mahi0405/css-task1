@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: black;
+    text-align: center;
+    letter-spacing: 1ch;
+    padding-top: 2%;
+}
+.product
+{
+    color: white;
+    background-image: url(picture.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+label
+{
+    width: 200px;
+    display: inline-block;
+    letter-spacing: 1px; 
+    margin-right: 1%;
+    padding: 2px;
+}
+.main
+{
+    border: 1px solid aliceblue;
+    width: 85%;
+    height: auto;
+    margin-left: 75px;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(67, 255, 214, 0.4);
+}
+.number
+{
+    width: 5%;
+}
+.num{
+   width: 51%;
+   padding-left: 1%;
+}
+.bill
+{
+    width: 60%;
+    padding-left: 0%;
+}
+input{
+    margin: 1%;
+    background: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    width: 300px;
+}
+
+button
+{
+    margin: 1%;
+    width: 150px;
+    padding: 5px;
+    border: 0;
+}
+footer
+{
+ display: flex;
+ justify-content: center;
+ position: absolute;
+ top: 90%;
+ left: 25%;
+}
+.place
+{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    margin-left: 20%;
+}
+.rset
+{
+background-color: orangered;
+color: white;
+}
+a
+{
+ color: brown;
+}
