@@ -57,7 +57,10 @@ input{
     padding: 2px;
     width: 300px;
 }
-
+::placeholder
+{
+    color: white;
+}
 button
 {
     margin: 1%;
