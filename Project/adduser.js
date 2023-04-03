@@ -2,74 +2,41 @@
 
 let form = document.getElementById('form');
 
-form.addEventListener("click", (e) =>  
+form.addEventListener("submit", async(e) =>  
 {
    e.preventDefault();
-})   
+   
 
 
 let name = document.getElementById('name').value;
 let gender = document.getElementById('gender').value;
 let email = document.getElementById('email').value;
-let status = document.getElementById('status').value;
+ let status = document.getElementById('status').value;
+// console.log(name);
+// console.log(gender);
+// console.log(email);
+// console.log(status); 
+const variable = {name: name,
+  gender: gender,
+  email: email,
+  status: status};
 
-
-
-fetch("https://gorest.co.in/public/v2/users?access-token=f1d5436e35786cc7cc85d10fb02bc1ba7f8f12f1d1e291eab7690de75ae60bb5", {
+console.log(variable);    
+await fetch('https://gorest.co.in/public/v2/users?access-token=b4cb886a0c588b69fad808a965f8b37ae20345b3d34157d959d970d12ac74a55', 
+    {
     method: "POST",
-    body : JSON.stringify ({
-        name : "name",
-        gender : "gender",
-        email : "email",
-        status: "status"
-    }),
+    
     headers : {
         "Content_type" : "application/json; charset=UTF-8",
-        "Authorization" : "Bearer"
-    }
-})
+        "Authorization" : "Bearer token"
+    },
+    body :JSON.stringify(variable),
+  })
 .then(res => res.json())
-.then(data => console.log(data));
+.then(data =>console.log(data))
+  //  window.location.href="userlist.html";  
 
-
-
-// let form = document.getElementById('form');
-
-// form.addEventListener("click", (e) =>  
-// {
-//    e.preventDefault();
-// })   
-
-
-// let name = document.getElementById('name').value;
-// let gender = document.getElementById('gender').value;
-// let email = document.getElementById('email').value;
-// let status = document.getElementById('status').value;
-
-
-
-// fetch("https://gorest.co.in/public/v2/users?access-token=f1d5436e35786cc7cc85d10fb02bc1ba7f8f12f1d1e291eab7690de75ae60bb5", {
-//     method: "POST",
-//     body : JSON.stringify ({
-//         name : "name",
-//         gender : "gender",
-//         email : "email",
-//         status: "status"
-//     }),
-//     headers : {
-//         "Content_type" : "application/json; charset=UTF-8",
-//         "Authorization" : "Bearer"
-//     }
-// })
-
-
-
-
-
-
-
-
-
+});
 
 
 
