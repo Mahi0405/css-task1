@@ -1,35 +1,29 @@
-const signinButton = document.getElementById("form");
-signinButton.addEventListener('click', validationForm);
-function validationForm() {
-    let email=document.getElementById("email").value;
-    let password=document.getElementById("password").value;
-   
-    if(email != "" || password != "")
-    {
-        window.location.href="userlist.html";
-        
-    }
-    else{ 
-        console.log("step2")
-    
-    alert("please check email or password");
-    }
-   
- }
+$(document).ready(function() {
+    $("form").submit(function(event) {
+      event.preventDefault(); // prevent default form submission
+  
+      var email = $("#email").val(); // get the email value
+      var password = $("#password").val(); // get the password value
+  
+      if (validateEmail(email) && validatePassword(password)) {
+        window.location.href = "userlist.html"; // redirect to the next page
+      } else {
+        alert("Invalid email or password"); // display error message
+      }
+    });
+  });
+  
+  function validateEmail(email) {
+    var re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    return re.test(email);
+  }
+  
+  function validatePassword(password) {
+    return password.length >= 8;
+  }
+  
 
-// function validationForm() {
-//     var emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     //Validate TextBox value against the Regex.
-//     var validation = emailValidation.test(document.getElementById("email").value);
-//     if (!validation) {
-//     alert("Not an email address");
-//     } else {
-//     alert("Valid email address!");
-    
-//     }
-//     window.location.href="userlist.html";
-//     return validation;
-    
-//     }    
+
+
 
 
